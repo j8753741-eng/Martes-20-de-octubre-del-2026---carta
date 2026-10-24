@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La suerte de coincidir contigo 🖤</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:25px 14px;background:linear-gradient(160deg,#17110d,#050505 60%,#21180d);color:#f7ead5;font-family:Georgia,serif}
+.card{max-width:720px;margin:auto;padding:26px;border-radius:12px;border:1px solid #8c713b;background:#0b0a09;box-shadow:0 0 30px #c5a35b18;position:relative}
+.card:after{content:"✦";position:absolute;right:20px;top:12px;color:#d8b766;font-size:30px;opacity:.65}
+.date{text-align:center;font-size:12px;letter-spacing:3px;color:#c8aa67}
+h1{text-align:center;color:#f2d59a;font-size:clamp(29px,6vw,44px);font-weight:normal;margin:25px 0 12px}
+.sub{text-align:center;font-style:italic;color:#c7b99f;margin-bottom:25px}
+.photo {
+    border: 1px solid #b49755;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 20px 0;
+    background: #17120c;
+    text-align: center;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+}input{display:none}
+.letter{font-size:18px;line-height:1.9}
+.letter p{margin:19px 0}
+.letter strong{color:#f0d28c;font-weight:normal}
+.end{text-align:center;color:#e4c477;font-style:italic;margin-top:30px}
+.ornament{text-align:center;color:#bda05b;letter-spacing:10px;margin-top:22px}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="date">MARTES · 20 DE OCTUBRE DE 2026</div>
+<h1>La suerte de coincidir contigo</h1>
+<div class="sub">Hay encuentros que terminan convirtiéndose en hogar. 🐈‍⬛</div>
+
+<div class="photo">
+    <img src="IMG_20261024_122718.png" alt="Un recuerdo bonito de nuestra historia">
+</div>
+
+<section class="letter">
+<p>Buenos días, mi preciosa. ❤️</p>
+
+<p>Hoy quería recordarte algo que a veces se esconde entre las prisas, las tareas y todo lo que hacemos durante el día: <strong>me hace feliz que nuestros caminos se hayan encontrado.</strong></p>
+
+<p>Entre tantas personas, tantos lugares y tantos días que pudieron ser diferentes, llegó un momento en el que empezaste a formar parte de mi vida. Y ahora hay cosas pequeñas que me recuerdan a ti, canciones que me hacen pensar en nosotros y momentos que quisiera contarte apenas tengo oportunidad.</p>
+
+<p>No digo que todos los días tengan que ser perfectos. Sé que habrá cansancio, preocupaciones y momentos en los que las palabras no salgan como queremos. Pero para mí, quererte también significa aprender, escucharte mejor y descubrir cómo acompañarte sin exigirte que estés bien todo el tiempo.</p>
+
+<p>Quiero que conmigo puedas sentirte querida sin tener que ganártelo, que puedas hablar cuando quieras y guardar silencio cuando lo necesites. No tienes que convertir cada día en uno maravilloso para merecer mi cariño.</p>
+
+<p><strong>Me gustas en tus días alegres, en tus días tranquilos y también cuando simplemente necesitas descansar del mundo.</strong> No porque espere algo de ti en cada momento, sino porque eres tú quien tiene un lugar tan bonito en mi corazón.</p>
+
+<p>Ojalá hoy encuentres algo que te haga reír, un ratito para respirar y una razón para sentirte orgullosa de ti misma. Yo, por mi parte, seguiré encontrando razones para enamorarme de esa personita tan especial que eres.</p>
+
+<p>Te amo muchísimo, mi niña. Gracias por ser parte de mi historia y por darle a tantos días un significado que antes no tenían.</p>
+
+<div class="end">Hoy también tengo la suerte de quererte. 🖤</div>
+<div class="ornament">✦ ♡ ✦</div>
+</section>
+</main>
+<script>
+document.getElementById('foto').addEventListener('change',function(e){
+const file=e.target.files[0];if(!file)return;
+const img=document.getElementById('imagen');img.src=URL.createObjectURL(file);img.style.display='block';
+document.querySelector('.photo label').style.display='none';
+});
+</script>
+</body>
+</html>
